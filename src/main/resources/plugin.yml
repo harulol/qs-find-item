@@ -1,0 +1,24 @@
+# Required
+name: ${name}
+version: ${version}
+main: ${groupId}.${artifactId}.${name}
+
+# Optional
+description: ${description}
+api-version: 1.17
+author: ${author}
+depend: [QuickShop]
+softdepend: [Essentials]
+
+# Commands
+commands:
+    finditem:
+        description: Activates the main feature
+        usage: §a§l[!] §a/finditem <item_name>
+        permission: mastville.finditem.command
+
+# Permissions
+permissions:
+    mastville.finditem.command:
+        description: Main command permission
+        default: true
