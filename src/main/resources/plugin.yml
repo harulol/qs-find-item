@@ -1,6 +1,6 @@
 name: AdvancedFindItem
 version: ${version}
-main: dev.hawu.plugins.finditem.MVFindItem
+main: dev.hawu.plugins.finditem.FindItem
 api-version: 1.15
 description: ${description}
 authors: [Haru, Pocketkid2]
