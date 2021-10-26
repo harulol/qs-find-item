@@ -1,6 +1,6 @@
 <div align="right">
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/harulol/qs-find-item/Java%20CI%20with%20Maven) ![GitHub](https://img.shields.io/github/license/harulol/qs-find-item)
+![GitHub](https://img.shields.io/github/license/harulol/qs-find-item)
 </div>
 
 <div align="center">
