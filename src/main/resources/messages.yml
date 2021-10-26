@@ -1,0 +1,82 @@
+# The help message that is sent to the sender when it is requested.
+help:
+
+  # Help index for the "reload" sub-command.
+  #
+  # %version%  The plugin's version.
+  reload:
+    - "&7AdvancedFindItem v%version%"
+    - ""
+    - "&7Reloads configuration files then applies changes."
+    - ""
+    - "&7Usage: &aafi reload [options]"
+    - ""
+    - "&7The following options are available:"
+    - "&f  -c  &7Reloads config.yml"
+    - "&f  -m  &7Reloads messages.yml"
+    - "&f  -p  &7Reloads pagination.yml"
+    - "&f  -b  &7Reloads buy-sell.yml"
+
+  # Help index for the "find" sub-command.
+  #
+  # %version%  The plugin's version.
+  find:
+    - "&7AdvancedFindItem v%version%"
+    - ""
+    - "&7Finds an item using its Minecraft ID."
+    - ""
+    - "&7Usage: &afinditem <material> [options]"
+    - ""
+    - "&7The following options are available:"
+    - "&f  -b&7, &f--buying&7   Specifies that you are the buyer."
+    - "&f  -s&7, &f--selling&7  Specifies that you are the seller."
+
+# Sent to the sender when the plugin expects a specified number of arguments,
+# and the user's inputted amount is insufficient.
+#
+# %expected%  The expected number of arguments.
+# %got%       The gotten number of arguments.
+not-enough-args: "&c&l(!) &cNot enough arguments!"
+
+# Sent to the sender when the plugin could not match the item the user
+# is asking for.
+#
+# %name%  The name the user inputted.
+invalid-item-name: "&c&l(!) &cInvalid item name &f'%name%'"
+
+# Sent to the sender when the plugin could not properly retrieve
+# the data from QuickShop.
+api-error: "&c&l(!) &cThere seems to be a problem from retrieving data from QuickShop."
+
+# Sent to the sender when the plugin could not find a single shop
+# wanting to sell the inputted item.
+no-selling-shops: "&c&l(!) &cThere are no shops selling this item right now!"
+
+# Sent to the sender when the plugin could not find a single shop
+# wanting to buy the inputted item.
+no-buying-shops: "&c&l(!) &cThere are no shops buying this item right now!"
+
+# Sent to the sender when the teleportation destination has some
+# blocks in the way.
+occluding-space: "&c&l(!) &cThere seems to be blocks blocking teleportation."
+
+# Sent to the sender when the teleportation failed, most likely
+# due to another plugin cancelling the action.
+plugin-blocked-teleportation: "&c&l(!) &cTeleportation unsuccessful. A plugin might have stopped this."
+
+# Sent to the sender after successfully teleporting to the shop.
+#
+# %owner%        The owner of the shop.
+# %transaction%  The transaction type. Will be replaced with "selling" if "owner" is selling, otherwise "buying".
+# %item%         The item type.
+teleport-msg: "&6&l(!) &6Warped to a shop by &f%owner%&6 %transaction% &f%item%&6."
+
+# Sent to the sender after they requested the plugin to reload a specific
+# configuration file.
+#
+# %file%  The file that was reloaded.
+reloaded: "&a&l(!) &aReloaded &e%file%&a."
+
+# Sent to the sender when they used the "reload" sub-command but did not actually
+# reload any files.
+reloaded-nothing: "&c&l(!) &cNothing seems to have reloaded. Did you forget to specify an &6option&c?"

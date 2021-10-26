@@ -1,24 +1,24 @@
-# Required
-name: ${name}
+name: AdvancedFindItem
 version: ${version}
-main: ${groupId}.${artifactId}.${name}
-
-# Optional
+main: dev.hawu.plugins.finditem.MVFindItem
+api-version: 1.15
 description: ${description}
-api-version: 1.17
-author: ${author}
-depend: [QuickShop]
-softdepend: [Essentials]
-
-# Commands
+authors: [Haru, Pocketkid2]
+softdepend: [QuickShop, Essentials, HikariLibrary]
 commands:
-    finditem:
-        description: Activates the main feature
-        usage: §a§l[!] §a/finditem <item_name>
-        permission: mastville.finditem.command
-
-# Permissions
+  advancedfinditem:
+    aliases: [afi]
+    description: The base command for this plugin.
+  finditem:
+    aliases: [find]
+    description: Command to find a shop willing to make transactions for the item.
 permissions:
-    mastville.finditem.command:
-        description: Main command permission
-        default: true
+  afi.main:
+    description: Allows access to the main command.
+    default: op
+  afi.find:
+    description: Finds a shop willing to make transactions for the item.
+    default: true
+  afi.reload:
+    description: Allows access to the reload sub-command.
+    default: op

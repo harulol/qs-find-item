@@ -1,0 +1,65 @@
+# The title of the buying or selling GUI.
+title: "Are you selling or buying?"
+
+# The number of rows for the GUI.
+# This will be coerced between 1 and 6.
+rows: 3
+
+# The icon that will be used as a button
+# that says "I want to buy this item."
+buy-icon:
+
+  # The position to place this icon in the GUI.
+  # Starting from the top left slot as position #0, incrementing
+  # by going from left to right, top to bottom.
+  index: 12
+
+  # The Bukkit material for the item.
+  material: GREEN_CONCRETE
+
+  # The display name of the item.
+  display-name: "&a&lI am buying"
+
+  # The lore for the icon.
+  lore:
+    - ""
+    - "&7I would like to &a&nBUY"
+    - "&7the specified item."
+    - ""
+    - "&6Click &eto choose."
+
+# The icon that will be used as a button
+# that says "I want to sell this item."
+sell-icon:
+
+  # The position to place this icon in the GUI.
+  # Starting from the top left slot as position #0, incrementing
+  # by going from left to right, top to bottom.
+  index: 14
+
+  # The Bukkit material for the item.
+  material: RED_CONCRETE
+
+  # The display name for the item.
+  display-name: "&c&lI am selling"
+
+  # The lore for the icon.
+  lore:
+    - ""
+    - "&7I would like to &c&nSELL"
+    - "&7the specified item."
+    - ""
+    - "&6Click &eto choose."
+
+# The icon that will be placed in the background, to remove
+# this, just simply specify the material to be AIR.
+background:
+
+  # The Bukkit material for the item.
+  material: BLACK_STAINED_GLASS_PANE
+
+  # The display name for the item.
+  display-name: "&a"
+
+  # The lore for the icon.
+  lore:

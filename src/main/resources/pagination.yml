@@ -1,0 +1,103 @@
+# The title of each page in the entire pagination
+#
+# %curr%  The current page, starting from 1
+# %max%   The maximum amount of pages
+title: "Shops (%curr%/%max%)"
+
+# Here lies the shop icon TEMPLATE that will be used as
+# buttons that teleport people to said shop.
+shop-icon:
+
+  # The bukkit material for the shop icon.
+  material: PLAYER_HEAD
+
+  # Whether to replace the player's head with the respective
+  # shop owner's head, if and only if material is PLAYER_HEAD.
+  custom-head: true
+
+  # The display name for the item.
+  #
+  # %owner's name%  The shop owner's bare IGN.
+  display-name: "&e&l%owner's name%"
+
+  # The lore for the item.
+  # For differences from price, the + (plus) sign or - (minus) sign
+  # will prepend the number.
+  # Numbers are also formatted with commas as digit separators and are fixed
+  # to 2 decimal places.
+  #
+  # %owner's name%     The shop owner's bare IGN.
+  # %price%            The price of the shop.
+  # %left%             The remaining stock or space left, depending on shop type.
+  # %median%           The evaluated median of this item's market price.
+  # %average%          The evaluated average of this item's market price.
+  # %median's diff%    Absolute difference from the median price.
+  # %median's rdiff%   Relative difference from the median price.
+  # %average's diff%   Absolute difference from the average price.
+  # %average's rdiff%  Relative difference from the average price.
+  lore:
+    - ""
+    - "&fPricing: &a$%price%"
+    - "&fAmount left: &a%left%"
+    - ""
+    - "&fCurrent Median: &a$%median%"
+    - "&fCurrent Average: &a$%average%"
+    - ""
+    - "&fComparing to median price:"
+    - "&a%median's rdiff% &8(%median's diff%&8)"
+    - ""
+    - "&fComparing to average price:"
+    - "&a%average's rdiff% &8(%average's diff%&8)"
+    - ""
+    - "&6Click &eto teleport."
+
+# Here lies the item TEMPLATE that will be used as next page
+# buttons.
+next-page:
+
+  # The bukkit material for the icon.
+  material: ARROW
+
+  # The display name of the icon.
+  display-name: "&aNext Page"
+
+  # The lore of the icon.
+  lore:
+    - ""
+    - "&7Traverse this pagination"
+    - "&7forwards"
+    - ""
+    - "&6Left click &eto traverse 1."
+    - "&6Right click &eto go to last."
+
+# Here lies the item TEMPLATE that will be used as previous page
+# buttons.
+previous-page:
+
+  # The bukkit material for the icon.
+  material: ARROW
+
+  # The display name of the icon.
+  display-name: "&aPrevious Page"
+
+  # The lore of the icon.
+  lore:
+    - ""
+    - "&7Traverse this pagination"
+    - "&7backwards"
+    - ""
+    - "&6Left click &eto traverse 1."
+    - "&6Right click &eto go to first."
+
+# Here lies the TEMPLATE that will be used as background buttons.
+# These serve no purpose and do nothing on interact.
+background:
+
+  # The bukkit material for the icon.
+  material: BLACK_STAINED_GLASS_PANE
+
+  # The display name of the icon.
+  display-name: "&a"
+
+  # The lore of the icon.
+  lore: []
